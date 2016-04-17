@@ -1,0 +1,155 @@
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    -webkit-print-color-adjust:exact;
+  }
+}
+@media print {
+  .titleBackground {
+    background: #b3dff0 !important;
+    -webkit-print-color-adjust:exact;  
+}}
+@media print {
+  .verticalBackground {
+    background: #eeeeee !important;
+    -webkit-print-color-adjust:exact;  
+}}
+
+
+@font-face {
+  font-family:"BebasNeue Light";
+  src: url('../fonts/BebasNeueLight.ttf') format("truetype");
+}
+@font-face {
+  font-family:"BebasNeue Bold";
+  src: url('../fonts/BebasNeueBold.ttf') format("truetype");
+}
+@font-face {
+  font-family:"BebasNeue Book";
+  src: url('../fonts/BebasNeueBook.ttf') format("truetype");
+}
+@font-face {
+  font-family:"BebasNeue Regular";
+  src: url('../fonts/BebasNeueRegular.ttf') format("truetype");
+}@font-face {
+  font-family:"BebasNeue Thin";
+  src: url('../fonts/BebasNeueThin.ttf') format("truetype");
+}
+
+
+
+
+body {
+  background: rgb(204,204,204); 
+}
+
+page {
+  position: static;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+#right {
+  font-family: "BebasNeue Regular";
+  font-size: 28px;
+}
+
+.titleBackground {
+  position:absolute;
+  height: 6.3cm;
+  width:21cm;
+  float: left;
+  background: #b3dff0;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0,100% 0,100% 62%,0% 100%);
+  -webkit-shape-margin: 20px;
+}
+
+.verticalBackground {
+  position:absolute;
+  height: 29.7cm;
+  width:6.8cm;
+  float: right;
+  margin-left: 13.8cm;
+  background: #eeeeee;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 97%);
+  -webkit-shape-margin: 20px;
+}
+
+.photo {
+  display: block;
+  height: 220px;
+  width: auto;
+  position: absolute;
+  margin-left: 0.7cm;
+}
+
+.name {
+  display:block;
+  position: absolute;
+  color:#ffffff;
+  margin-left: 4.5cm;
+  margin-top:0.23cm;
+}
+#firstName {
+  display: inline-block;
+  font-family: "BebasNeue Light";
+  font-size: 80px;
+  margin-right:15px;
+  margin-bottom: -50px;
+}
+
+#lastName {
+  display: inline-block;
+  font-family: "BebasNeue Bold";
+  font-size: 80px;
+  margin-bottom:-50px;
+}
+#jobTitle {
+  font-family: "BebasNeue Thin";
+  color:#40454a;
+  font-size: 40px;
+  text-align: right;
+}
+
+#contact {
+  display: block;
+  position: absolute;
+  margin-left: 14cm;
+  margin-top: 0.3cm;
+}
+
+.info {
+  margin-bottom: 0.16cm;
+}
+
+.icon {
+  height: 30px;
+  display: inline-flex;
+  margin-right:0.2cm;
+}
+
+#contact p {
+  vertical-align: middle;
+  display: inline-flex;
+  width:4.8cm;
+  font-family: Monospace;
+  letter-spacing: -0.4px;
+  font-size: 13px;
+  margin-bottom: 0px;
+  line-height: 100%
+}
+
+
+
+
+

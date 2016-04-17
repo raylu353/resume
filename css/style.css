@@ -1,0 +1,205 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+#navSection {	
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:527px;
+	font-size:20px;
+}
+
+.navbar-default.navbar-customized{
+	color: #ffffff;
+	border-width: 0px;
+    background: transparent;
+    text-align: center;
+
+}
+
+.navlist >li > a
+{
+	color:#ffffff;
+	background-color:rgba(0,0,0,0.3) !important;
+}
+
+.navlist > li > a:hover,
+.navlist > li > a:focus  {
+	color:#ffffff;
+	background-color:rgba(0,0,0,0.6) !important;
+}
+
+.logo {
+	height: 60px;
+}
+
+.h2title {
+	font-size:35px;
+	font-family: adobe-garamond-pro;
+	text-align: center
+}
+
+.h1title {
+	font-size:50px;
+	color: #ffffff;
+	font-family: adobe-garamond-pro;
+	text-align: center;
+	text-shadow: 5px 5px #000000;
+
+}
+.h1title2 {
+	font-size:40px;
+	color: #ffffff;
+	font-family: Georgia;
+	text-align: center;
+	text-shadow: 5px 2px #000000;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width:150px;
+}
+
+.briefscetionpic {
+	align:top;
+	display: inline-table;
+	margin-right:10px;
+	margin-bottom: 15px;
+	margin-left:50px;
+}
+
+.brief {
+	width:70%;
+	display:inline-table;
+	vertical-align: middle;
+}
+.briefpara {
+	text-align: center;
+}
+
+#monash{
+	padding: 40px;
+	background-image: url("../img/monash.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 263px;
+}
+
+#banner{
+	padding: 80px;
+	background-image: url("../img/banner.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+}
+.expert {
+	width:100%;
+	text-align: center;
+}
+.advanced {
+	width:75%;
+	text-align: center;
+}
+.intermediate {
+	width:50%;
+	text-align: center;
+}
+.beginner {
+	width:25%;
+	text-align: center;
+}
+
+.slide{
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 170px;
+}
+
+.blockactived {
+	background-color: #cce6ff;
+}
+
+
+
+#devblock {
+	height:505px;
+}
+#qablock {
+	height:505px;
+}
+#teamblock {
+	height:505px;
+}
+.teamblock p{
+	height:20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: serif;
+
+}
+
+.carousel-caption {
+	background-color: rgba(0,0,0,0.4);
+	font-size:40px;
+	color: #ffffff;
+	font-family: Georgia;
+	text-align: center;
+	text-shadow: 5px 2px #000000;
+}
+
+.footer {
+	background-color: #00001a;
+	color:#cccccc;
+	padding: 30px;
+}
+
+.hi {
+	margin-left:200px;
+}
+.hi h1{
+	font-size: 63px;
+	text-decoration: underline;
+}
+.hi p{
+	font-size: 28px;
+}
+
+.social {
+	font-size: 28px;
+	margin-right: 28px;
+}
+
+.footleft {
+	margin-bottom: 40px;
+}
+
+#scroll {
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
