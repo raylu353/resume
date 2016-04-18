@@ -5,16 +5,20 @@
     -webkit-print-color-adjust:exact;
   }
 }
-@media print {
-  .titleBackground {
-    background: #b3dff0 !important;
-    -webkit-print-color-adjust:exact;  
-}}
+
 @media print {
   .verticalBackground {
     background: #eeeeee !important;
     -webkit-print-color-adjust:exact;  
-}}
+  }
+  .titleBackground {
+      background: #b3dff0 !important;
+      -webkit-print-color-adjust:exact;  
+  }
+}
+div {
+  zoom: 1;
+}
 
 
 @font-face {
@@ -57,10 +61,7 @@ page[size="A4"] {
   width: 21cm;
   height: 29.7cm; 
 }
-#right {
-  font-family: "BebasNeue Regular";
-  font-size: 28px;
-}
+
 
 .titleBackground {
   position:absolute;
@@ -75,10 +76,10 @@ page[size="A4"] {
 
 .verticalBackground {
   position:absolute;
-  height: 29.7cm;
-  width:6.8cm;
+  height: 29.6cm;
+  width:7.5cm;
   float: right;
-  margin-left: 13.8cm;
+  margin-left: 13cm;
   background: #eeeeee;
   background-size: cover;
   -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 97%);
@@ -101,6 +102,7 @@ page[size="A4"] {
   margin-top:0.23cm;
 }
 #firstName {
+  position:absolute;
   display: inline-block;
   font-family: "BebasNeue Light";
   font-size: 80px;
@@ -109,16 +111,21 @@ page[size="A4"] {
 }
 
 #lastName {
+  position: absolute;
   display: inline-block;
   font-family: "BebasNeue Bold";
   font-size: 80px;
   margin-bottom:-50px;
+  margin-left:250px;
 }
 #jobTitle {
+  position: absolute;
   font-family: "BebasNeue Thin";
   color:#40454a;
   font-size: 40px;
+  width:310px;
   text-align: right;
+  margin-top: 80px;
 }
 
 #contact {
@@ -129,27 +136,149 @@ page[size="A4"] {
 }
 
 .info {
-  margin-bottom: 0.16cm;
+  display: table-row;
 }
 
 .icon {
+  display: table-cell;
   height: 30px;
-  display: inline-flex;
-  margin-right:0.2cm;
+  margin-right:0.4cm;
 }
 
 #contact p {
   vertical-align: middle;
-  display: inline-flex;
-  width:4.8cm;
-  font-family: Monospace;
+  display: table-cell;
+  width:5cm;
+  min-width: 5cm;
+  height:36px;
+  font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;;
   letter-spacing: -0.4px;
   font-size: 13px;
   margin-bottom: 0px;
   line-height: 100%
 }
 
+#left-col {
+  position:absolute;
+  background-color: ;
+  height: 850px;
+  width: 450px;
+  margin-top: 220px;
+  margin-left:0.7cm;
+}
 
+.imageblock {
+  display:inline-block;
+  background-color: #b3dff0;
+  width:40px;
+  height:60px;
+  vertical-align: top;
+  text-align: center;
+  margin-left:80px;
+  margin-top: 20px;
+}
+.img {
+  width:30px;
+}
+.title-text {
+  position: absolute;
+  display: inline-block;
+  font-family: "BebasNeue Book";
+  font-size:30px;
+  margin-left: 15px;
+  margin-top: 25px;
+}
 
+.title-banner {
+  position: absolute;
+  background-color: #000000;
+  height:10px;
+  width: 100px;
+  margin-top: -20px;
+  margin-left: 60px;
+}
+.item-body p {
+  margin-top:15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
+  padding-right: 30px;
+  padding-left: 15px;
+}
 
+.work-title {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #e5e5e5;
+  width:250px;
+  text-align: right;
+  font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.companyAndTime {
+  width: 110px;
+  background-color: #b3dff0;
+  position: absolute;
+  display: inline-block;
+  text-align: right;
+  font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;;
+  font-weight: bold;
+  color:#ffffff;
+  margin-left: 50px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+.company {
+  text-align: left;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
 
+#right-col {
+  position:absolute;
+  height: 850px;
+  width: 270px;
+  margin-top: 240px;
+  margin-left: 500px;
+}
+#right-col .imageblock {
+  margin-left: 25px;
+  height:67px;
+}
+
+#right-col .title-banner {
+  height:8px;
+  width: 80px;
+  margin-left: 15px;
+  margin-top: -15px;
+}
+#right-col .title-text {
+  font-size:24px;
+  margin-top:25px; 
+  line-height: 24px;
+}
+#right-col .img {
+  margin-top: 8px;
+}
+
+ul {
+  list-style-position:inside;
+  padding: 0px;
+}
+
+ul li {
+  margin-top: 10px;
+  line-height: 15px;
+}
+
+ul p {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+  margin: 5px !important;
+}
+
+.li-title {
+  font-weight: bold;
+}
